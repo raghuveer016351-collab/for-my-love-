@@ -1218,16 +1218,56 @@ document.getElementById("loveBtn").onclick=function(){
 
 };
 </script>
+<div style="text-align:center; margin:50px;">
+<button onclick="loveSurprise()" style="
+padding:15px 30px;
+font-size:22px;
+border-radius:50px;
+background:#ff4d6d;
+color:white;
+border:none;
+">
+❤️ One Last Surprise ❤️
+</button>
+
+<h1 id="loveText"></h1>
+</div>
+
+<script>
+function loveSurprise(){
+
+document.getElementById("loveText").innerHTML =
+"I Love You So Much Snoor ❤️🌹";
+
+for(let i=0;i<50;i++){
+
+let rose=document.createElement("div");
+
+rose.innerHTML="🌹";
+rose.style.position="fixed";
+rose.style.left=Math.random()*100+"%";
+rose.style.top="-20px";
+rose.style.fontSize="30px";
+rose.style.transition="5s";
+
+document.body.appendChild(rose);
+
+setTimeout(()=>{
+rose.style.top="100%";
+},100);
+
+setTimeout(()=>{
+rose.remove();
+},5000);
+
+}
+
+}
+</script>
 </body>
 
 </html>
-<button id="loveBtn">
-❤️ Click Me ❤️
-</button>
 
-<div id="loveMessage">
-I Love You So Much Snoor ❤️
-</div>
 
 
 
