@@ -1157,28 +1157,7 @@ startBtn.onclick = function(){
 };
 </script>
 
-document.getElementById("loveBtn").onclick=function(){
 
-    document.getElementById("loveMessage").style.display="block";
-
-    for(let i=0;i<100;i++){
-
-        let rose=document.createElement("div");
-
-        rose.className="rose";
-        rose.innerHTML="🌹";
-
-        rose.style.left=Math.random()*100+"vw";
-        rose.style.animationDuration=(3+Math.random()*3)+"s";
-
-        document.body.appendChild(rose);
-
-        setTimeout(()=>{
-            rose.remove();
-        },6000);
-    }
-
-};
 </script>
 <div style="text-align:center; margin:50px;">
 <button onclick="loveSurprise()" style="
