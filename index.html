@@ -1156,45 +1156,7 @@ startBtn.onclick = function(){
     startScreen.style.display = "none";
 };
 </script>
-<style>
-#loveMessage{
-    display:none;
-    font-size:40px;
-    text-align:center;
-    color:#ff4d6d;
-    font-weight:bold;
-    margin-top:30px;
-}
 
-#loveBtn{
-    padding:15px 35px;
-    border:none;
-    border-radius:50px;
-    background:#ff4d6d;
-    color:white;
-    font-size:22px;
-    cursor:pointer;
-}
-
-.rose{
-    position:fixed;
-    top:-50px;
-    font-size:30px;
-    animation:fall 5s linear forwards;
-    z-index:9999;
-}
-
-@keyframes fall{
-    from{
-        transform:translateY(0) rotate(0deg);
-    }
-    to{
-        transform:translateY(100vh) rotate(360deg);
-    }
-}
-</style>
-
-<script>
 document.getElementById("loveBtn").onclick=function(){
 
     document.getElementById("loveMessage").style.display="block";
